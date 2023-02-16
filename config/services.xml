@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+    <services>
+        <service id="acme.social.twitter_client" class="Links\Bundle\SpidBundle\SpidBundle">
+            <argument>%spid.sp.entityId%</argument>
+            <argument>%spid.sp.key_file%</argument>
+            <argument>%spid.sp.cert_file%</argument>
+            <argument>%spid.sp.attribute_consuming_service%</argument>
+            <argument>%spid.sp.assertion_consumer_service%</argument>
+            <argument>%spid.sp.single_logout_service%</argument>
+            <argument>%spid.sp.org_name%</argument>
+            <argument>%spid.sp.org_display_name%</argument>
+            <argument>%spid.sp.idp_metadata_folder%</argument>
+        </service>
+    </services>
+</container>

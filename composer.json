@@ -1,0 +1,66 @@
+{
+    "name": "links/spid-bundle",
+    "description": "Bundle di interfaccia tra Symfony 5+ e spid-php-lib",
+    "type": "symfony-bundle",
+    "require": {
+        "italia/spid-php-lib": "*",
+        "italia/spid-smart-button": "*",
+        "italia/spid-sp-access-button": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Links\\Bundle\\SpidBundle\\": "src/"
+        }
+    },
+    "repositories": {
+        "spid-php-lib": {
+            "type": "package",
+            "package": {
+                "name": "italia/spid-php-lib",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/italia/spid-php-lib",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "spid-sp-access-button": {
+            "type": "package",
+            "package": {
+                "name": "italia/spid-sp-access-button",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/italia/spid-sp-access-button",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "spid-smart-button": {
+            "type": "package",
+            "package": {
+                "name": "italia/spid-smart-button",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/damikael/spid-smart-button",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Alessandro Di Pierro",
+            "email": "alessandro.dipierro@linksmt.it"
+        }
+    ],
+    "require-dev": {
+        "symfony/dependency-injection": "^6.2",
+        "symfony/config": "^6.2",
+        "symfony/http-kernel": "^6.2",
+        "symfony/yaml": "^6.2"
+    }
+}
