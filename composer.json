@@ -13,6 +13,11 @@
             "Links\\Bundle\\SpidBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Links\\Bundle\\SpidBundle\\Tests\\": "tests/"
+        }
+    },
     "repositories": {
         "spid-php-lib": {
             "type": "package",
@@ -61,6 +66,7 @@
         "symfony/dependency-injection": "^6.1",
         "symfony/config": "^6.1",
         "symfony/http-kernel": "^6.1",
-        "symfony/yaml": "^6.1"
+        "symfony/yaml": "^6.1",
+        "nyholm/symfony-bundle-test": "^2.0"
     }
 }

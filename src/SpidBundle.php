@@ -2,6 +2,8 @@
 
 namespace Links\Bundle\SpidBundle;
 
+use Italia\Spid\Sp;
+use Links\Bundle\SpidBundle\Service\LoginService;
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
@@ -68,11 +70,10 @@ class SpidBundle extends AbstractBundle
             $container->parameters()->set('spid.' . $key, $value);
         }
 
-//        if ($config['scream']) {
-//            $container->services()
-//                ->get('acme_hello.printer')
-//                ->class(ScreamingPrinter::class)
-//            ;
-//        }
+        if ($config['sp']['enabled']) {
+            $container->services()
+                ->get('links.bundle.spid.login')
+                ->class(LoginService::class);
+        }
     }
 }
