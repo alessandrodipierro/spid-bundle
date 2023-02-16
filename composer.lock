@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f3d1f85353a59c0f77be3dcbb187f70",
+    "content-hash": "cb6dbb49624682f1872ec694c877ab06",
     "packages": [
         {
             "name": "italia/spid-php-lib",

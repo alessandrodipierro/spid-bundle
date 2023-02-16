@@ -54,15 +54,15 @@ class SpidBundle extends AbstractBundle
         $container->import('../config/services.xml');
 
         // you can also add or replace parameters and services
-        $container->parameters()
-            //->set('spid.sp.use_acme_goodbye', $config['use_acme_goodbye'])
-            ->set('spid.sp.enabled', $config['sp']['enabled'])
-            ->set('spid.sp.entityId', $config['sp']['entityId'])
-            ->set('spid.sp.key_file', $config['sp']['key_file'])
-            ->set('spid.sp.cert_file', $config['sp']['cert_file'])
-            ->set('spid.sp.attribute_consuming_service', $config['sp']['attribute_consuming_service'])
-            ->set('spid.sp.', $config['sp'][''])
-            ->set('spid.sp.', $config['sp']['']);
+//        $container->parameters()
+//            //->set('spid.sp.use_acme_goodbye', $config['use_acme_goodbye'])
+//            ->set('spid.sp.enabled', $config['sp']['enabled'])
+//            ->set('spid.sp.entityId', $config['sp']['entityId'])
+//            ->set('spid.sp.key_file', $config['sp']['key_file'])
+//            ->set('spid.sp.cert_file', $config['sp']['cert_file'])
+//            ->set('spid.sp.attribute_consuming_service', $config['sp']['attribute_consuming_service'])
+//            ->set('spid.sp.', $config['sp'][''])
+//            ->set('spid.sp.', $config['sp']['']);
 
         foreach ($config as $key => $value) {
             $container->parameters()->set('spid.' . $key, $value);

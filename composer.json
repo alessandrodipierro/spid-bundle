@@ -58,9 +58,9 @@
         }
     ],
     "require-dev": {
-        "symfony/dependency-injection": "^6.2",
-        "symfony/config": "^6.2",
-        "symfony/http-kernel": "^6.2",
-        "symfony/yaml": "^6.2"
+        "symfony/dependency-injection": "^6.1",
+        "symfony/config": "^6.1",
+        "symfony/http-kernel": "^6.1",
+        "symfony/yaml": "^6.1"
     }
 }
